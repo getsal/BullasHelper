@@ -22,13 +22,13 @@ RPC_URL=https://rpc.berachain.com
 PRIVATE_KEY=your_private_key_here
 # Bullas V2
 GAME_CONTRACT_ADDRESS=your_game_CA
-TOKEN_ID=あなたのtoken_id
-CHECK_INTERVAL=28800 # インターバル時間（秒、デフォルトは8時間
-``
+TOKEN_ID=your_token_id
+CHECK_INTERVAL=28800  # インターバル時間（秒、デフォルトは8時間
+```
 
 3.スクリプトを実行する。
-``bash
-ノード index.js
+```bash
+node index.js
 ```
 
 ## 動作原理
@@ -42,8 +42,8 @@ CHECK_INTERVAL=28800 # インターバル時間（秒、デフォルトは8時�
 ## ログファイル
 
 スクリプトは成功した各実行の時間を `claim_log.txt` ファイルに記録する。書式は以下の通りである：
-``
-2023-10-25T08:00:00.123Z - TokenIDのクレームが実行されました: 1699
+```
+2023-10-25T08:00:00.123Z - Claim executed for TokenID: 1699
 ```
 
 スクリプトが再起動されると、このログファイルが読み込まれ、クレーム処理を直ちに実行する必要があるかどうかが判断される：
@@ -70,10 +70,10 @@ CHECK_INTERVAL=28800 # インターバル時間（秒、デフォルトは8時�
 1.このリポジトリをクローンするか、ソースコードをダウンロードする。
 2.プロジェクトディレクトリに移動し、依存関係をインストールします：
 
-bash
+```bash
 cd auto_claim
 npm install
-``
+```
 
 3.サンプルの環境変数ファイルをコピーして、環境変数を設定します：
 
@@ -92,9 +92,9 @@ cp .env.example .env
 1.envファイルが正しく設定されていることを確認する。
 2.スクリプトを実行する：
 
-bash
-ノード index.js
-``
+```bash
+node index.js
+```
 
 このスクリプトはアカウントの容量状況を監視し始め、容量がいっぱいになると自動的に報酬を集めます。
 
