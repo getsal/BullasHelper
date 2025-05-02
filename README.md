@@ -12,9 +12,10 @@ Bullasゲームのクレーム機能を自動的に定期的に実行し、ゲ�
 ## インストールと使用
 
 1.依存関係をインストールする。
-``bash
+
+```bash
 npm install ethers@5.7.2 dotenv
-``
+```
 
 2.envファイルを設定する。
 ```
@@ -77,9 +78,9 @@ npm install
 
 3.サンプルの環境変数ファイルをコピーして、環境変数を設定します：
 
-bash
+```bash
 cp .env.example .env
-``
+```
 
 4.作成した `.env` ファイルを編集し、以下の情報を入力する：
    - RPC_URL``: Berachain RPC URL
