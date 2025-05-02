@@ -78,9 +78,9 @@ npm install
 
 3.サンプルの環境変数ファイルをコピーして、環境変数を設定します：
 
-```bash
+````bash
 cp .env.example .env
-```
+````
 
 4.作成した `.env` ファイルを編集し、以下の情報を入力する：
    - RPC_URL``: Berachain RPC URL
